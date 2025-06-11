@@ -1,0 +1,10 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build',
+      '-f', 'cape-control-backend/Dockerfile',  # Path to Dockerfile
+      '-t', 'gcr.io/$PROJECT_ID/cape-control-backend',
+      'cape-control-backend/'                   # Build context
+    ]
+images:
+  - 'gcr.io/$PROJECT_ID/cape-control-backend'
