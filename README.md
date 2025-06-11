@@ -1,2 +1,0 @@
-# autocode
-Building with Codespace
